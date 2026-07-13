@@ -56,6 +56,11 @@
   .bc-url{color:#6f757d;font-size:12px;direction:ltr;word-break:break-all;}
 
   footer{text-align:center;color:#6f757d;font-size:12.5px;margin-top:60px;padding-top:24px;border-top:1px solid var(--line);}
+
+  img.img-broken{
+    object-fit:contain !important;padding:18% !important;background:var(--bg-1);
+    opacity:.55;filter:grayscale(100%);
+  }
 </style>
 </head>
 <body>
@@ -124,6 +129,17 @@
   </div>
 
   <script>
+    const FALLBACK_IMG = 'data:image/svg+xml;utf8,' + encodeURIComponent(
+      `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#24272c"/><g stroke="#8a7239" stroke-width="2" fill="none"><rect x="18" y="18" width="64" height="64" rx="4"/><circle cx="38" cy="38" r="7"/><path d="M18 68l20-20 12 12 14-14 18 18"/></g></svg>`
+    );
+    document.addEventListener('error', (e)=>{
+      const img = e.target;
+      if(img && img.tagName === 'IMG' && !img.classList.contains('img-broken')){
+        img.classList.add('img-broken');
+        img.src = FALLBACK_IMG;
+      }
+    }, true);
+
     const els=document.querySelectorAll('.reveal');
     const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
     els.forEach(el=>io.observe(el));
