@@ -31,7 +31,7 @@
   .eng{font-family:'Cormorant Garamond',serif;}
 
   /* ---------- Scroll reveal ---------- */
-  .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease, transform .8s ease;}
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.8s ease, transform 0.8s ease;}
   .reveal.in{opacity:1;transform:translateY(0);}
 
   /* ---------- Header ---------- */
@@ -46,7 +46,7 @@
     background:rgba(20,21,24,.88);
     backdrop-filter:blur(10px);
     padding:8px 5%;
-    box-shadow:0 1px 0 var(--line);
+    box-shadow: 0 1px 0 var(--line);
   }
   .brand-logos{display:flex;align-items:center;gap:8px;cursor:pointer;position:relative;z-index:210;}
   .brand-logo{display:flex;align-items:center;cursor:pointer;}
@@ -185,7 +185,7 @@
   }
   .slide-eyebrow::before{content:"";width:34px;height:1px;background:var(--gold);}
   .slide h1{
-    font-size:clamp(34px,5.4vw,68px);line-height:1.15;font-weight:700;
+    font-size: clamp(34px, 5.4vw, 68px);line-height:1.15;font-weight:700;
     margin-bottom:18px;opacity:0;transform:translateY(24px);
   }
   .slide h1 em{font-style:normal;color:var(--gold-soft);}
@@ -201,7 +201,7 @@
   }
   .slide .cta:hover{background:var(--gold-soft);letter-spacing:.5px;}
   .slide.active .slide-eyebrow{transition:opacity .8s ease .5s, transform .8s ease .5s;opacity:1;transform:translateY(0);}
-  .slide.active h1{transition:opacity .9s ease .65s, transform .9s ease .65s;opacity:1;transform:translateY(0);}
+  .slide.active h1{transition:opacity 0.9s ease 0.65s, transform 0.9s ease 0.65s;opacity:1;transform:translateY(0);}
   .slide.active p{transition:opacity .9s ease .8s, transform .9s ease .8s;opacity:1;transform:translateY(0);}
   .slide.active .cta{transition:opacity .9s ease .95s, transform .9s ease .95s;opacity:1;transform:translateY(0);}
 
@@ -346,7 +346,7 @@
   .detail-back:hover{border-color:var(--gold);color:var(--gold-soft);}
   .detail-hero-content{position:relative;z-index:3;max-width:760px;}
   .detail-hero-content .eyebrow{color:var(--gold-soft);letter-spacing:4px;font-size:12.5px;font-weight:600;margin-bottom:16px;}
-  .detail-hero-content h1{font-size:clamp(30px,4.6vw,54px);font-weight:700;margin-bottom:16px;}
+  .detail-hero-content h1{font-size: clamp(30px, 4.6vw, 54px);font-weight:700;margin-bottom:16px;}
   .detail-hero-content p{color:var(--ink-dim);font-size:16px;line-height:1.9;max-width:600px;}
   .sub-logo{height:64px;width:auto;margin-bottom:22px;filter:drop-shadow(0 4px 14px rgba(0,0,0,.45));}
 
