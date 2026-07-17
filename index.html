@@ -31,7 +31,7 @@
   .eng{font-family:'Cormorant Garamond',serif;}
 
   /* ---------- Scroll reveal ---------- */
-  .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease, transform .8s ease;}
+  .reveal{opacity:0;transform:translateY(28px);transition: opacity 0.8s ease, transform 0.8s ease;}
   .reveal.in{opacity:1;transform:translateY(0);}
 
   /* ---------- Header ---------- */
@@ -44,9 +44,9 @@
   }
   header.scrolled{
     background:rgba(20,21,24,.88);
-    backdrop-filter:blur(10px);
+    backdrop-filter: blur(10px);
     padding:8px 5%;
-    box-shadow:0 1px 0 var(--line);
+    box-shadow: 0 1px 0 var(--line);
   }
   .brand-logos{display:flex;align-items:center;gap:8px;cursor:pointer;position:relative;z-index:210;}
   .brand-logo{display:flex;align-items:center;cursor:pointer;}
@@ -201,7 +201,7 @@
   }
   .slide .cta:hover{background:var(--gold-soft);letter-spacing:.5px;}
   .slide.active .slide-eyebrow{transition:opacity .8s ease .5s, transform .8s ease .5s;opacity:1;transform:translateY(0);}
-  .slide.active h1{transition:opacity .9s ease .65s, transform .9s ease .65s;opacity:1;transform:translateY(0);}
+  .slide.active h1{transition: opacity 0.9s ease 0.65s, transform 0.9s ease 0.65s;opacity:1;transform:translateY(0);}
   .slide.active p{transition:opacity .9s ease .8s, transform .9s ease .8s;opacity:1;transform:translateY(0);}
   .slide.active .cta{transition:opacity .9s ease .95s, transform .9s ease .95s;opacity:1;transform:translateY(0);}
 
@@ -418,7 +418,7 @@
     opacity:0;transform:translateY(26px);transition:opacity .7s ease, transform .7s ease, border-color .4s ease, box-shadow .4s ease;
   }
   .project-card.in{opacity:1;transform:translateY(0);}
-  .project-card:hover{border-color:var(--gold-dim);box-shadow:0 30px 62px rgba(0,0,0,.5);}
+  .project-card:hover{border-color:var(--gold-dim);box-shadow: 0 30px 62px rgba(0, 0, 0, 0.5);}
   .project-card .pj-bg{position:absolute;inset:0;background-size:cover;background-position:center;
     transform:scale(1.02);transition:transform 1.2s cubic-bezier(.2,.7,.2,1);}
   .project-card:hover .pj-bg{transform:scale(1.09);}
