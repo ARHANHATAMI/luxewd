@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, shrink-to-fit=no" id="viewport" referrerpolicy="no-referrer"><meta name="referrer" content="no-referrer"/><meta name="theme-color" content="#1b1d21"><meta name="color-scheme" content="dark light"><meta name="color-scheme" content="dark"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; referrer no-referrer; upgrade-insecure-requests"><meta http-equiv="X-Frame-Options" content="DENY">
 <title>LUXEVD | درها و پنجره‌های لوکس و آپارتمان‌سازی</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" as="font" crossorigin="anonymous" referrerpolicy="no-referrer" integrity="sha256-9kz4 {@fontsource}" loading="lazy" media="print" onload="this.media='all'" nonce="random-nonce" fetchpriority="high" rel="noopener noreferrer" decoding="async" fetchpriority="high"/><link rel="preload" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" as="style"/>
+<link rel="preconnect" href="https://fonts.googleapis.com" as="font" crossorigin="anonymous" referrerpolicy="no-referrer" integrity="sha256-9kz4 {@fontsource}" loading="lazy" media="print" onload="this.media='all'" nonce="random-nonce" fetchpriority="high" rel="noopener noreferrer" decoding="async"/><link rel="preload" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" as="style"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy">
 <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" integrity="sha256-9kz4 {@fontsource}" crossorigin="anonymous" referrerpolicy="no-referrer">
 <style>
@@ -741,7 +741,7 @@
         <div class="slide-eyebrow">CONSTRUCTION DIVISION</div>
         <h1>آپارتمان‌سازی با <em>استاندارد لوکس</em></h1>
         <p>از فونداسیون تا تحویل کلید؛ اجرای پروژه‌های آپارتمانی با نظارت مهندسی و متریال باکیفیت.</p>
-        <button class="cta" onclick="openDetail('apartments')">مشاهده پروژه‌ها ←</button>
+        <button type="button" class="cta" onclick="openDetail('apartments')">مشاهده پروژه‌ها ←</button>
       </div>
     </div>
 
@@ -752,7 +752,7 @@
         <div class="slide-eyebrow">WINDOW SYSTEMS</div>
         <h1>پنجره‌هایی برای <em>نور، آرامش و امنیت</em></h1>
         <p>پنجره‌های دوجداره یوپی‌وی‌سی و آلومینیوم با عایق حرارتی و صوتی بالا، متناسب با نمای مدرن ساختمان شما.</p>
-        <button class="cta" onclick="openDetail('windows')">مشاهده مجموعه پنجره ←</button>
+        <button type="button" class="cta" onclick="openDetail('windows')">مشاهده مجموعه پنجره ←</button>
       </div>
     </div>
 
@@ -763,7 +763,7 @@
         <div class="slide-eyebrow">LUXDOOR COLLECTION</div>
         <h1>درهایی که <em>ورودِ هر خانه</em> را روایت می‌کنند</h1>
         <p>ساخت و اجرای درهای چوبی، ضدسرقت و شیشه‌ای با متریال درجه‌یک برای آپارتمان‌های لوکس. طراحی اختصاصی، اجرای بی‌نقص.</p>
-        <button class="cta" onclick="openDetail('doors')">مشاهده مجموعه درها ←</button>
+        <button type="button" class="cta" onclick="openDetail('doors')">مشاهده مجموعه درها ←</button>
       </div>
     </div>
 
@@ -984,7 +984,7 @@
           <h2 id="dgTitle"></h2>
           <p id="dgSubtitle"></p>
         </div>
-        <button class="cat-back" onclick="backToDoorCategories()">
+        <button type="button" class="cat-back" onclick="backToDoorCategories()">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           تغییر دستهٔ محصول
         </button>
@@ -1800,7 +1800,7 @@
           <span class="pc-tag">${p.tag}</span>
           <h4>${p.name}</h4>
           <p>${p.desc}</p>
-          <button class="pc-btn" onclick="openProductModal('${cat}',${i})">مشاهده جزئیات
+          <button type="button" class="pc-btn" onclick="openProductModal('${cat}',${i})">مشاهده جزئیات
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
           </button>
         </div>
@@ -1997,7 +1997,7 @@
 <!-- ================= PRODUCT DETAIL MODAL ================= -->
 <div class="pm-overlay" id="pmOverlay" onclick="closeProductModal(event)">
   <div class="pm-box" role="dialog" aria-modal="true">
-    <button class="pm-close" onclick="closeProductModal()" aria-label="بستن">&times;</button>
+    <button type="button" class="pm-close" onclick="closeProductModal()" aria-label="بستن">&times;</button>
     <div class="pm-img-col"><img loading="lazy" alt="" loading="lazy" decoding="async" loading="lazy" alt="" loading="lazy" alt="" loading="lazy" alt="" decoding="async" loading="lazy" decoding="async" loading="lazy" decoding="async" loading="lazy" decoding="async" loading="lazy" decoding="async" loading="lazy" id="pmImg" src="" alt=""></div>
     <div class="pm-info">
       <span class="pc-tag" id="pmTag"></span>
